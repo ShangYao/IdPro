@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,form,p{margin-top:0px; padding:0}
+.r{ text-align:right}
+.l{ text-align:left}
+.c{ text-align:center}
+.sj{ text-indent:2em}
+.tab1{ font-family:"方正仿宋_GBK","宋体";font-size:20px; font-weight:bold; text-align:left;margin-top:20px; line-height:150%;}
+.tab2{ font-family:"仿宋_GB2312","宋体";font-size:22px;text-align:left;margin-top:20px; line-height:200%;}
+.t1{ text-align:center;font-size:25px;font-weight:bold;}
+.pad1{ padding-right:20px;}
+.pad2{ padding-right:50px;}
+.an_bg{ width:80px; height:25px; background-color:#d6e8fd; color:#042b5b; font-size:14px; font-weight:bold; border:1px solid #929394; line-height:25px;}
+.tab3{ border:1pt solid windowtext;border:1pt solid windowtext;font-family:"仿宋_GB2312","宋体";font-size:20px;text-align:left;margin-top:20px; line-height:150%;}
+.tab4{ width:100%;border:1pt solid windowtext;border-top:1pt solid windowtext;}
+.tab4 td
+	{mso-style-parent:style0;font-family:宋体; font-size:14px; line-height:40px;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	border-left:1pt solid windowtext;border-bottom:1pt solid windowtext;padding:1px;}
+
+.t2{ text-align:center;font-size:25px;font-weight:bold;font-family:"黑体","宋体";}
+.f1{ text-align:left;font-size:14px;font-family:"宋体"; line-height:25px;}
+.f2{ text-align:left;font-size:16px;font-family:"宋体"; line-height:30px;}
+.tit1{margin:0;padding:0;font-size:20px;line-height:40px;font-weight:bold;border-bottom:1px solid;}
+.tab5{ width:100%;border-top:1pt solid windowtext;border-right:1pt solid windowtext;}
+.tab5 td
+	{mso-style-parent:style0;font-family:宋体; font-size:14px; line-height:30px; text-align:center;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	border-left:1pt solid windowtext;border-bottom:1pt solid windowtext;padding:1px;}
+.tab6{ width:100%;border-right:1pt solid windowtext;}
+.tab6 td
+	{mso-style-parent:style0;font-family:宋体; font-size:14px; line-height:30px; text-align:center;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	border-left:1pt solid windowtext;border-bottom:1pt solid windowtext;padding:1px;}
+.tab7{width:650px;border:none}
+.tab7 td
+	{mso-style-parent:style0;font-family:宋体; font-size:12px; line-height:25px; text-align:left;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	}
+
+.tab8{width:98%;border:none}
+.tab8 td
+	{mso-style-parent:style0;font-family:宋体; font-size:12px; line-height:25px; text-align:left;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	}
+.tab9{width:650px;border:none}
+.tab9 td
+	{mso-style-parent:style0;font-family:宋体;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-style:normal;
+	border:none;
+	mso-rotate:0;
+	}
+.input_f1{font-family:"仿宋_GB2312","宋体";font-size:20px;}
+.border0{  border:none; text-align:center;width:100%;font-size:12px;}
+.underline0{ border-bottom:1px solid #000; border-top:none; border-left:none; border-right:none; text-align:center;}
+.wfss{font-family:"仿宋_GB2312","宋体";font-size:20px;text-align:left;line-height:150%;text-indent:2em;border:none;overflow-y:auto;}
+.underline2{border:none;text-decoration:underline; overflow:hidden; line-height:30px;}

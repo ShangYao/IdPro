@@ -1,0 +1,95 @@
+/*图片列表标题特效*/
+.boxgrid img{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	border: 0; 
+}
+.boxgrid1 img{ 
+ 
+	left: 0; 
+	border: 0; 
+}
+.boxcaption{ 
+	float: left; 
+	position: absolute; 
+	background: #01766c; 
+	height: 40px; 
+	width: 100%; 
+	opacity: .8; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.boxgrid_title{
+	font-size:14px;
+	font-weight:bold;
+	padding:4px 5px 0 10px;
+	color:white;
+}
+.boxgrid_con{
+	font-size:12px;
+	padding:4px 5px 0 10px;
+	color:white;
+}
+
+.framegrid_cover{
+	position:absolute;
+	width:200px;
+	background-color:#343434;
+	color:white;
+	opacity: .8; 
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	left:8px;
+}
+.framegrid a{
+	text-decoration:none;
+	color:white;
+}
+.framegrid a:hover{
+	text-decoration:none;
+	color:white;
+}
+.framegrid{
+	position:relative;
+	float:left;
+}
+.framegrid_title{
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 5px 0 10px;
+	color:white;
+	overflow:hidden;
+}
+.framegrid_con{
+	font-size:12px;
+	padding:2px 5px 0 10px;
+	color:white;
+	overflow:hidden;
+}
+ /*图片列表标题特效*/
+ /*缩略图预览*/	
+#imgpreview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#aee7fc;
+	padding:1px;
+	display:none;
+	color:#000;
+	overflow:auto;display:none;
+	width:100%;text-align:center;
+	}
+#tit{color:blue;font-weight:bold;font-size:14px;display:-moz-inline-box;display:inline-block;width:200px; text-align:left;}
+.handler2{text-align:center;padding-right:300px;}
+/*缩略图预览*/
+.btnRelRight{background: url(mainframe/buttonIso.gif) transparent no-repeat  -7px -784px;width:30px;height:30px; border:none;cursor:pointer;}
+.btnRelLeft{cursor:pointer;background: url(mainframe/buttonIso.gif) transparent no-repeat  -37px -784px;width:30px;height:30px; border:none;}
+.btnClose{background: url(mainframe/buttonIso.gif) transparent no-repeat  -73px -784px;width:30px;height:30px; border:none;cursor:pointer;}
+.btnFull{background: url(mainframe/buttonIso.gif) transparent no-repeat  -105px -784px;width:30px;height:30px; border:none;cursor:pointer;}
+.btnBig{background: url(mainframe/buttonIso.gif) transparent no-repeat  -137px -784px;width:30px;height:30px; border:none;cursor:pointer;}
+.btnSmall{background: url(mainframe/buttonIso.gif) transparent no-repeat  -167px -784px;width:30px;height:30px; border:none;cursor:pointer;}
+.btnPre{background: url(mainframe/preArrow.gif) transparent no-repeat;width:30px;height:30px; border:none;cursor:pointer;}
+.btnNext{background: url(mainframe/nextArrow.gif) transparent no-repeat;width:30px;height:30px; border:none;cursor:pointer;}

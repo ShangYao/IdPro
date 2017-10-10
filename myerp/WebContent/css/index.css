@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/**********************************header**********************************/
+.header{width:100%;height:95px;z-index:999;position:fixed;left:0px;top:0px;background:#246bc3}
+/* .head-top{width:100%;height:25px;background:#cefefd;} */
+.head-title{padding-left:300px;float:left;width:751px;height:85px;}
+.head-left{float:left;margin-left:140px;margin-top:40px;font-size:14px}
+.head-left a:link{color:#FFF;text-decoration: none;}
+.head-left a:hover{color:#ffea00;text-decoration: underline;}
+
+/**********************************middle**********************************/
+.middle{width:1100px;margin: 100px auto;}
+/**********************===sidebar======****************/
+.sidebar{float: left;width: 200px;background-color: #246bc3;font-weight: bold;letter-spacing: 8px;}
+.sidebar .nav li a span {float:right;font-size:11px;font-family:"黑体"}
+.nav-word{float:left}
+ul.nav a{color:#FFF}
+ul.nav{list-style:none;padding:0; margin: 0 auto;overflow:hidden;border-top: 1px solid #FFF; }		
+ul.nav li {width: 100%;line-height: 40px;text-align: left;border-bottom: 1px groove #FFF;font-size: 16px;}
+
+
+
+ul.nav a{ padding: 2px 2px 2px 40px;display: block; text-decoration: none;}
+ul.nav a.current,ul.nav a:hover{background-color: #d8ecfc;color: #000;}
+
+
+/*********************=== content==========***********/
+.content{float:left;padding: 0px 0px;width: 900px;background-color:#FFF}
+

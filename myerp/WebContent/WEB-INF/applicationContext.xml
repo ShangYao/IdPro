@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:task="http://www.springframework.org/schema/task" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+					    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
+					    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+					    http://www.springframework.org/schema/context
+       	 				http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 以下针对tomcat -->
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"
+		p:jndiName="java:comp/env/jdbc/erp" />
+	<!-- dao -->
+	<bean id="dynamicsqldao" class="com.sy.pub.dao.DefaultDynamicSqlDao">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
+	<!-- 事务控制 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="baseTxProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		lazy-init="true" abstract="true">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="codeService" class="com.sy.service.imp.CodeServiceImpl">
+		<property name="dynamicsqldao">
+			<ref bean="dynamicsqldao" />
+		</property>
+	</bean>
+	<!-- 系统登陆 -->
+	<bean id="loginService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="com.sy.service.imp.LoginServiceImpl">
+				<property name="dynamicsqldao">
+					<ref bean="dynamicsqldao" />
+				</property>
+				<property name="codeService" ref="codeService" />
+			</bean>
+		</property>
+	</bean>
+	<!-- 身份证信息管理系统 -->
+	<bean id="idManageService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="com.sy.service.imp.IdManageServiceImpl">
+				<property name="dynamicsqldao">
+					<ref bean="dynamicsqldao" />
+				</property>
+				<property name="codeService" ref="codeService" />
+			</bean>
+		</property>
+	</bean>
+	
+</beans>

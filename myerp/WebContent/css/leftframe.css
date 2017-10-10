@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-size:12px;margin:0;padding:0;line-height:200%;height:100%;border:0;text-align:left;}ul{margin:0;padding:0;}li{margin:0;padding:0;list-style-type:none;}dl{margin:0;padding:0;}dt{margin:0;padding:0;}dd{margin:0;padding:0;}ol{margin:0;padding:0;}img{border:0;}form{margin:0;}a{cursor:pointer;cursor:hand;}
+html{scrollbar-face-color:#DEF;scrollbar-highlight-color:#FFF;scrollbar-shadow-color:#9BC;scrollbar-3dlight-color:#ACD;scrollbar-arrow-color:#68A;scrollbar-track-color:#EEE;scrollbar-darkshadow-color:#DEF;}
+#scrollContent{line-height:150%;position:relative;z-index:0; background-image:url(mainframe/left_bt.jpg); background-position:bottom; background-repeat:no-repeat; background-color:#FFFFFF;}
+.box4{padding:2px 4px 4px 0;}
+.box4_topcenter{width:100%;height:26px;background-image:url(mainframe/box4_topcenter.jpg);background-repeat:repeat-x;overflow:hidden;line-height:26px;}
+.box4_topleft{width:100%;height:100%;background-image:url(mainframe/box4_topleft.jpg);background-repeat:no-repeat;overflow:hidden;}
+.box4_topright{width:100%;height:100%;background-image:url(mainframe/box4_topright.jpg);background-repeat:no-repeat;background-position:100% 0;overflow:hidden;}
+.box4_topcenter2{width:100%;height:1px;overflow:hidden;border-top:solid 1px #89b5fe;background-color:#fff;}
+.box4_middlecenter{width:100%;background-color:#fff;}
+.box4_middleleft{width:100%; border-left:1px solid #8ab6ff;background-repeat:repeat-y;}
+.box4_middleright{width:100%;background-image:url(mainframe/box4_middleright.jpg);background-repeat:repeat-y;background-position:100% 0;}
+.box4_bottomcenter{width:100%;height:1px;background-color:#8ab6ff;}
+/*.box4_bottomcenter{width:100%;height:5px;background-image:url(mainframe/box4_bottomcenter.jpg);background-repeat:repeat-x;overflow:hidden;}
+.box4_bottomleft{width:100%;height:100%;background-image:url(mainframe/box4_bottomleft.jpg);background-repeat:no-repeat;overflow:hidden;}
+.box4_bottomright{width:100%;height:100%;background-image:url(mainframe/box4_bottomright.jpg);background-repeat:no-repeat;background-position:100% 0;overflow:hidden;}*/
+.box4 .title{color:red;height:26px;line-height:26px;padding:0 0 0 10px;font-weight:bold; text-align:center}
+.box4 .boxContent{padding:0;}
+.box4 .boxContent .subtitle{padding:0 3px 0 1px;}
+.box4 .boxContent .subtitle_con{background-image:url(mainframe/box4_subbg.jpg);background-repeat:repeat-x;height:25px;width:100%;line-height:25px;text-indent:20px;font-weight:bold;color:#fff;border-left:solid 1px #fff;border-right:solid 1px #fff;}
+.box4  ul{padding:0 0 8px 0;}
+.box4  li{padding:5px 0 0 4%;}
+.box4  li a{display:block;width:95%;height:25px;line-height:25px;background-image:url(mainframe/box4_listBg.jpg);background-repeat:repeat-x;border:solid 1px #96b154;text-indent:10px;text-decoration:none; color:#0a417e;}
+.box4  li a:visited{background-image:url(mainframe/box4_listBg_hover.jpg);background-repeat:repeat-x;border:solid 1px #008eda;text-decoration:none;color:#0b5ea0;}
+.box4  li a:hover,.box4  li a:active,.box4  li a:focus{background-image:url(mainframe/box4_listBg_hover.jpg);background-repeat:repeat-x;border:solid 1px #008eda;text-decoration:none;color:#0b5ea0;}
+.box4  li .current{background-image:url(mainframe/box4_listBg_hover.jpg);background-repeat:repeat-x;border:solid 1px #008eda;text-decoration:none;color:#0b5ea0;}
+.box4 li a.current{background-image:url(mainframe/box4_listBg_hover.jpg);background-repeat:repeat-x;border:solid 1px #008eda;text-decoration:none;color:#0b5ea0;}
+.box4 .boxContent .line_dot{height:4px;overflow:hidden;border-top:dotted 1px #1793e7;}
+.nav_icon_v_item img{height:40px;width:40px;}
+.nav_icon_v_item a{text-align:center;margin:0px auto!important;display:block;width:160px;border:solid 1px #fff;text-decoration:none; color:#0a417e;}
+.current2{border:solid 1px #adb9c2;background-image:url(mainframe/titlebar_iconBg.jpg);background-repeat:repeat-x;text-decoration:none;color:black;}
+.nav_icon_v_item_text{font-weight:normal!important;}
+.nav_icon_v_item_text .text_slice{width:160px;line-height:30px;}
